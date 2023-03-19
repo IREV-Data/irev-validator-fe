@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomePage } from "./components/pages/HomePage";
-// import { StatisticsPage } from "./components/pages/StatisticsPage";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { FormValidationPage } from "./components/pages/FormValidationPage";
+import { HomePage } from "./components/pages/HomePage";
 import { LoginPage } from "./components/pages/LoginPage";
+import { StatisticsPage } from "./components/pages/StatisticsPage";
 import { TranscriptionV2Page } from "./components/pages/TranscriptionV2Page";
 import ProtectedRoute from "./utilityComponents";
 
