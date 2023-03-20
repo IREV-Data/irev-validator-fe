@@ -4,7 +4,6 @@ import { FormValidationPage } from "./components/pages/FormValidationPage";
 import { HomePage } from "./components/pages/HomePage";
 import { LoginPage } from "./components/pages/LoginPage";
 import { StatisticsPage } from "./components/pages/StatisticsPage";
-import { TranscriptionV2Page } from "./components/pages/TranscriptionV2Page";
 import ProtectedRoute from "./utilityComponents";
 
 const router = createBrowserRouter([
@@ -26,7 +25,7 @@ const router = createBrowserRouter([
     path: "/v2-landing",
     element: (
       <ProtectedRoute>
-        <TranscriptionV2Page />
+        <HomePage />
       </ProtectedRoute>
     ),
   },
