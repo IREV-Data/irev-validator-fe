@@ -5,7 +5,6 @@ import Autocomplete from "@mui/material/Autocomplete";
 export const ComboBox = ({ value, onChange, data, label }) => {
   return (
     <Autocomplete
-      disabled
       fullWidth
       disablePortal
       id="combo-box-demo"
