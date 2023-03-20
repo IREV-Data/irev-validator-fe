@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   {
     path: "/",
 
-    element: <TranscriptionV2Page />,
+    element: <HomePage />,
   },
   {
     path: "/login",
@@ -23,10 +23,10 @@ const router = createBrowserRouter([
     element: <StatisticsPage />,
   },
   {
-    path: "/v1-landing",
+    path: "/v2-landing",
     element: (
       <ProtectedRoute>
-        <HomePage />
+        <TranscriptionV2Page />
       </ProtectedRoute>
     ),
   },
