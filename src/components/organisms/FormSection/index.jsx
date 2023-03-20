@@ -85,7 +85,6 @@ const addScoreKeyToPartyInfo = (parties) => {
 };
 
 export const FormSection = ({ data, refetch }) => {
-  const puDelim = data.image.url.split("/")[7].split(".")[0].split("-");
   const ALLOWED_PARTIES = getAllowedParties(data.parties);
   const [isNotStamped, setIsNotStamped] = useState(false);
   const [recaptchaDone, setRecaptchaDone] = useState(false);
@@ -266,11 +265,6 @@ export const FormSection = ({ data, refetch }) => {
             value={pollingUnit}
             onChange={handlePollingUnitChange}
           />
-          <p style={{ fontWeight: 500, fontStyle: "italic" }}>
-            {/* puDelim */}
-            Detected: State ({puDelim[0]}) - LGA ({puDelim[1]}) - Polling unit:
-            ({puDelim[3]})
-          </p>
         </DroopdownWrapper>
       </section>
 
